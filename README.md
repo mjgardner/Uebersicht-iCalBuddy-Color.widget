@@ -24,14 +24,21 @@ output.
 ### 1. Install &Uuml;bersicht
 
 If you haven't already, download and install [&Uuml;bersicht][],
-a macOS app that lets you run widgets on your desktop.
+a macOS app that lets you run widgets on your desktop, either from the
+website or via [Homebrew](https://brew.sh/):
+
+```shell
+brew install ubersicht
+```
 
 ### 2. Install iCalBuddy
 
 iCalBuddy is the command-line tool that fetches your calendar events.
+You can download it from the [home page][iCalBuddy] or use
+[Homebrew](https://brew.sh/):
 
 ```shell
-brew install icalbuddy
+brew install ical-buddy
 ```
 
 ### 3. Install This Widget
@@ -46,7 +53,7 @@ brew install icalbuddy
 
 ```shell
 cd ~/Library/Application\ Support/&Uuml;bersicht/widgets/
-git clone <repository-url> iCalBuddy\ Color.widget
+git clone https://codeberg.org/mjgardner/Uebersicht-iCalBuddy-Color.widget.git
 ```
 
 ### 4. Grant Calendar Access
