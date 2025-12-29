@@ -10,6 +10,29 @@ This is an Übersicht widget (https://github.com/felixhageloh/uebersicht) that d
 - Übersicht desktop widget framework (React-based)
 - iCalBuddy CLI tool (installed at `/opt/homebrew/bin/icalBuddy`)
 
+## Repository Structure & Distribution
+
+**Distribution approach:**
+- Users download `iCalBuddy-Color.widget.zip` (no need to clone)
+- Developers can clone for contributions
+
+**Gallery requirements** (per https://github.com/felixhageloh/uebersicht-widgets/blob/master/README.md):
+
+1. **`widget.json`** - Manifest file with name, description, author, email
+2. **`iCalBuddy-Color.widget.zip`** - Distribution package containing `index.jsx`
+3. **`screenshot.png`** - Gallery preview image (516x320px hi-res format)
+
+**Build tools:**
+- **`Makefile`** - Creates and verifies the ZIP file distribution
+  - `make zip` - Creates `iCalBuddy-Color.widget.zip` with proper structure
+  - `make verify` - Lists ZIP contents
+  - `make clean` - Removes generated files
+
+**Hosting:**
+- Primary repository: Codeberg (https://codeberg.org/mjgardner/Uebersicht-iCalBuddy-Color.widget)
+- Mirror: GitHub (https://github.com/mjgardner/Uebersicht-iCalBuddy-Color.widget)
+- GitHub mirror required for Übersicht widget gallery submission
+
 ## Widget Architecture
 
 **File:** `index.jsx` - Single-file widget implementation

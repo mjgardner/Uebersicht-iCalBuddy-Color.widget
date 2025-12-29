@@ -43,18 +43,27 @@ brew install ical-buddy
 
 ### 3. Install This Widget
 
-**Option A: Download directly**
+**Recommended: Download the widget package**
 
-1. Download this widget folder
-2. Move it to: `~/Library/Application Support/&Uuml;bersicht/widgets/`
+1. Download `iCalBuddy-Color.widget.zip` from the repository
+2. Extract it to: `~/Library/Application\ Support/Übersicht/widgets/`
 3. &Uuml;bersicht will automatically load it
 
-**Option B: Clone via git**
+**Alternative: Clone via git (for development)**
+
+If you want to contribute or modify the widget:
 
 ```shell
-cd ~/Library/Application\ Support/&Uuml;bersicht/widgets/
+cd ~/Library/Application\ Support/Übersicht/widgets/
 git clone https://codeberg.org/mjgardner/Uebersicht-iCalBuddy-Color.widget.git
 ```
+
+> [!NOTE]
+> The public repository is hosted on
+> [Codeberg](https://codeberg.org/mjgardner/Uebersicht-iCalBuddy-Color.widget)
+> and mirrored to
+> [GitHub](https://github.com/mjgardner/Uebersicht-iCalBuddy-Color.widget)
+> per &Uuml;bersicht widget gallery requirements.
 
 ### 4. Grant Calendar Access
 
@@ -84,6 +93,7 @@ position: {
 ```
 
 **Examples:**
+
 - Full width at top: `top: 40, left: 40, right: 40`
 - Right side only: `top: 100, left: 1200, right: 40`
 - Bottom half: `top: 600, left: 100, right: 100`
@@ -133,6 +143,7 @@ calendar: {
 ```
 
 To find your iCalBuddy path:
+
 ```bash
 which icalBuddy
 ```
@@ -157,15 +168,15 @@ ansiColors: {
 
 1. Check if iCalBuddy is installed:
 
-   ```shell
-   which icalBuddy
-   ```
+    ```shell
+    which icalBuddy
+    ```
 
 2. If not installed:
 
-   ```shell
-   brew install icalbuddy
-   ```
+    ```shell
+    brew install icalbuddy
+    ```
 
 3. If installed but widget can't find it, update the path in
    `CONFIG.calendar.icalBuddyPath`
@@ -173,11 +184,13 @@ ansiColors: {
 ### No Events Showing
 
 1. Check if you have events in Apple Calendar for the next 7 days
+
 2. Test iCalBuddy directly:
 
-   ```shell
-   /opt/homebrew/bin/icalBuddy eventsToday+7
-   ```
+    ```shell
+    /opt/homebrew/bin/icalBuddy eventsToday+7
+    ```
+
 3. Make sure &Uuml;bersicht has calendar access in System Settings >
    Privacy & Security > Calendars
 
