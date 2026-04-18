@@ -55,12 +55,12 @@ If you want to contribute or modify the widget:
 
 ```shell
 cd ~/Library/Application\ Support/Übersicht/widgets/
-git clone https://codeberg.org/mjgardner/Uebersicht-iCalBuddy-Color.widget.git
+git clone https://forgejo.phoenixtrap.com/mjg/Uebersicht-iCalBuddy-Color.widget.git
 ```
 
 > [!NOTE]
-> The public repository is hosted on
-> [Codeberg](https://codeberg.org/mjgardner/Uebersicht-iCalBuddy-Color.widget)
+> This repository is hosted at
+> [forgejo.phoenixtrap.com/mjg/Uebersicht-iCalBuddy-Color.widget](https://forgejo.phoenixtrap.com/mjg/Uebersicht-iCalBuddy-Color.widget)
 > and mirrored to
 > [GitHub](https://github.com/mjgardner/Uebersicht-iCalBuddy-Color.widget)
 > per &Uuml;bersicht widget gallery requirements.
@@ -232,7 +232,7 @@ This shows exactly what the widget will display.
     - [GitHub repo](https://github.com/ali-rantakari/icalBuddy)
 - For &Uuml;bersicht issues:
   [&Uuml;bersicht GitHub](https://github.com/felixhageloh/uebersicht)
-- For widget-specific issues: Check the Issues tab of this repository
+- For widget-specific issues: [Open an issue on Forgejo](https://forgejo.phoenixtrap.com/mjg/Uebersicht-iCalBuddy-Color.widget/issues)
 
 ## Credits
 
